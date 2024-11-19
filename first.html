@@ -88,16 +88,15 @@
 
   <script>
     function displayGreeting() {
-      // Get the input value
-      const greeting = document.getElementById('greetingMessage').value;
-      
-      // If the input field is not empty, display the message
-      if (greeting) {
-        document.getElementById('output').innerText = "OR SAWAL MT PUCHNA : " + greeting;
-      } else {
-        document.getElementById('output').innerText = "Please enter a message.";
-      }
-    }
+  const greeting = document.getElementById('greetingMessage').value;
+  console.log(greeting);  // Logs the input value for debugging
+  if (greeting.trim() !== "") {  // Check if there's actual text
+    document.getElementById('output').innerText = "OR SAWAL MT PUCHNA : " + greeting;
+  } else {
+    document.getElementById('output').innerText = "Please enter a message.";
+  }
+}
+
     // second Asssignment javascritp
 
     function addNumbers() {
